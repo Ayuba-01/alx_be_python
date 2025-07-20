@@ -34,9 +34,10 @@
 
 # Note: 'Read a book' is a low priority task. Consider completing it when you have free time.
 
-task = input("Enter a task: ")
-priority = input("Enter task's priority (high, medium, low): ").lower()
-time_bound = input("Is the task time-bond (yes or no ): ").lower()
+task = input("Enter your task:")
+time_bound = input("Is it time-bound? (yes/no):")
+priority = input("Priority (high/medium/low):")
+
 
 match priority:
     case "high":
