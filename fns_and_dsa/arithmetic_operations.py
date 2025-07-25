@@ -48,7 +48,10 @@ def perform_operation(num1, num2, operation):
     
     def divide(num1, num2):
         """Returns the difference of two numbers."""
-        return num1 / num2
+        if num2 > 0:
+            return num1 / num2
+        else:
+            return "Cannot divide by zero."
     
     
     
