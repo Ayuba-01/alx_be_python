@@ -48,10 +48,12 @@ def perform_operation(num1, num2, operation):
     
     def divide(num1, num2):
         """Returns the division of two numbers."""
-        if num2 > 0 or num1 > 0:
-            return num1 / num2
-        else:
+        if num2 == 0: 
             return "Cannot divide by zero."
+        elif num1 == 0:
+            return "Cannot divide by zero."
+        else:
+            return num1 / num2
     
     
     
