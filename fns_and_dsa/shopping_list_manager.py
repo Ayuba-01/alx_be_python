@@ -31,11 +31,11 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            answer = input("Type the item to be added to the shopping list: ").capitalize()
+            answer = input("Enter the item to add: ").capitalize()
             shopping_list.append(answer)
         elif choice == '2':
             # Prompt for and remove an item
-            answer = input("Type the item to be removed from the shopping list: ").capitalize()
+            answer = input("Enter the item to remove: ").capitalize()
             if answer in shopping_list:
                 shopping_list.remove(answer)
             else:
