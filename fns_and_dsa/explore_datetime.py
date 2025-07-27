@@ -10,7 +10,8 @@ def calculate_future_date():
     current_date = datetime.now()
     time_to_add = timedelta(days=future_date)
     new_time = time_to_add + current_date
-    return new_time
+    new_date = new_time.date()
+    return new_date
     
 
 print(f"Current date and time: {display_current_datetime()}")
