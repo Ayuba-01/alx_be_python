@@ -9,9 +9,9 @@ def calculate_future_date():
     global days_to_add
     current_date = datetime.now()
     time_to_add = timedelta(days=days_to_add)
-    new_time = time_to_add + current_date
-    future_date = new_time.strftime("%Y-%m-%d")
-    return future_date
+    future_date = time_to_add + current_date
+    future_date_fr = future_date.strftime("%Y-%m-%d")
+    return future_date_fr
     
 
 print(f"Current date and time: {display_current_datetime()}")
