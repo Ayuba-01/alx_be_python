@@ -1,14 +1,14 @@
-import datetime
+from datetime import datetime, timedelta
 
 
 def display_current_datetime():
-    current_date = datetime.datetime.now()
+    current_date = datetime.now()
     return current_date
 
 def calculate_future_date():
     global future_date
-    current_date = datetime.datetime.now()
-    time_to_add = datetime.timedelta(days=future_date)
+    current_date = datetime.now()
+    time_to_add = timedelta(days=future_date)
     new_time = time_to_add + current_date
     return new_time
     
