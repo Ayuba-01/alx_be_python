@@ -10,7 +10,7 @@ def calculate_future_date():
     current_date = datetime.now()
     time_to_add = timedelta(days=future_date)
     new_time = time_to_add + current_date
-    new_date = new_time.date()
+    new_date = new_time.strftime("%Y-%m-%d")
     return new_date
     
 
